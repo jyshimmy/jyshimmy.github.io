@@ -1,0 +1,46 @@
+/* 곧 없어질 애 */
+h1 {
+  color: red;
+  font-style: italic;
+}
+/* 모든 h1태그에 빨간색, 기울임꼴을 적용 */
+
+/* navigation bar */
+.topnavbar {
+  background-color: cadetblue;
+  overflow: hidden;
+}
+.topnavbar ul {
+  position: fixed;
+  top: 0;
+  width: 100%
+  /*  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkslategray;
+  list-style-type: none; 이 줄이 ul에 있을 땐 맨 윗 줄에 bullet points 가 안사라짐!
+  */
+}
+
+.topnavbar li {
+  list-style-type: none;
+  float: left;
+}
+/* display: inline;과 float을 같이 썼더니 error가 남 */
+
+.topnavbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* none인데 굳이 왜 쓰는거? */
+}
+
+.topnavbar li a:hover {
+  background-color: black;
+}
+
+.topnavbar .active {
+  background-color: #4caf50
+}
